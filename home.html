@@ -3,43 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXORÉVA - Forge Your Future in Tech</title>
-    <link rel="stylesheet" href="base.css">
+    <title>NEXORÉVA - Forge Your Future in Tech | Best IT Training & Internships</title>
+    <meta name="description" content="Transform your tech career with NEXORÉVA's industry-focused training, live projects, and guaranteed internships. Learn Python, AI, Web Development & more.">
+    
     <link rel="stylesheet" href="home.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header/Navigation -->
+    <!-- Enhanced Transparent Header -->
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
                 <div class="logo">
-                    <img src="NEXORÉVA.png" alt="NEXORÉVA Logo" class="logo-img">
+                    <a href="#home">
+                        <img src="images/NEXORÉVA.png" alt="NEXORÉVA Logo" class="logo-img">
+                    </a>
                 </div>
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
+                        <a href="#home" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Courses <i class="fas fa-chevron-down"></i></a>
+                        <a href="#courses" class="nav-link">Courses <i class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-content">
-                            <a href="#">Python</a>
-                            <a href="#">Web Development</a>
-                            <a href="#">AI & Machine Learning</a>
-                            <a href="#">Data Science</a>
+                            <a href="#python-course"><i class="fab fa-python"></i> Python Development</a>
+                            <a href="#ai-course"><i class="fas fa-brain"></i> AI & Machine Learning</a>
+                            <a href="#mobile-course"><i class="fas fa-mobile-alt"></i> Mobile Development</a>
+                            <a href="#courses"><i class="fas fa-chart-line"></i> Data Science</a>
+                            <a href="#courses"><i class="fas fa-cloud"></i> Cloud Computing</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Internships & Projects</a>
+                        <a href="#internships" class="nav-link">Internships & Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Career Services</a>
+                        <a href="career_services.html" class="nav-link">Career Services</a>
                     </li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
                 <div class="hamburger">
@@ -51,86 +56,1145 @@
         </nav>
     </header>
 
-      <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-slide active" data-bg="images/hero-1.jpg"></div>
+            <div class="hero-slide" data-bg="images/hero-2.jpg"></div>
+        </div>
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1 class="hero-title">Forge Your Future in Tech</h1>
-            <p class="hero-subtitle">Empower yourself with real-world IT skills through high-quality training, live projects, and industry-relevant internships</p>
-            <div class="hero-buttons">
-                <a href="#" class="btn btn-primary">Start Learning</a>
-                <a href="#" class="btn btn-secondary">View Courses</a>
+            <div class="hero-badge hero-badge-hover" data-aos="fade-up">
+                <span><i class="fas fa-star"></i> Trusted by 5000+ Students</span>
+            </div>
+            <h1 class="hero-title hero-title-hover" data-aos="fade-up" data-aos-delay="200">Forge Your Future in Tech</h1>
+            <p class="hero-subtitle hero-subtitle-hover" data-aos="fade-up" data-aos-delay="400">Transform your career with industry-focused training, real-world projects, and guaranteed internship placements. Join India's fastest-growing tech education platform.</p>
+
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="800">
+                <a href="#courses" class="btn btn-primary pulse-animation">
+                    <i class="fas fa-rocket"></i>
+                    Start Your Journey
+                </a>
+                <a href="#about" class="btn btn-secondary glass-btn">
+                    <i class="fas fa-play-circle"></i>
+                    Learn More
+                </a>
             </div>
         </div>
         <div class="hero-animation">
             <div class="floating-elements">
-                <i class="fab fa-python"></i>
-                <i class="fab fa-js-square"></i>
-                <i class="fas fa-database"></i>
-                <i class="fas fa-brain"></i>
-                <i class="fab fa-react"></i>
+                <i class="fab fa-python float-1"></i>
+                <i class="fab fa-js-square float-2"></i>
+                <i class="fas fa-database float-3"></i>
+                <i class="fas fa-brain float-4"></i>
+                <i class="fab fa-react float-5"></i>
+                <i class="fab fa-aws float-6"></i>
+                <i class="fab fa-docker float-7"></i>
+                <i class="fas fa-chart-line float-8"></i>
             </div>
         </div>
     </section>
 
-    <!-- Highlights Section -->
-    <section class="highlights">
+    <!-- Company Ticker Section -->
+    <section class="company-ticker section-bg-1">
         <div class="container">
-            <h2 class="section-title">Why Choose NEXORÉVA?</h2>
+            <p class="ticker-title">Trusted by Leading Companies</p>
+            <div class="ticker-wrapper">
+                <div class="ticker-content">
+                    <div class="company-item">
+                        <img src="images/company1.jpg" alt="Google">
+                        <span>Google</span>
+                    </div>
+                    <div class="company-item">
+                        <img src="images/company2.png" alt="Microsoft">
+                        <span>Microsoft</span>
+                    </div>
+                    <div class="company-item">
+                        <img src="images/company3.jpg" alt="Amazon">
+                        <span>Amazon</span>
+                    </div>
+                    <div class="company-item">
+                        <img src="images/company4.jpeg" alt="Infosys">
+                        <span>Infosys</span>
+                    </div>
+                    <div class="company-item">
+                        <img src="images/company5.webp" alt="TCS">
+                        <span>TCS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section id="why-choose" class="highlights section-bg-2">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-up">Why 50,000+ Students Choose NEXORÉVA?</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Experience the difference with our industry-first approach to tech education</p>
+            </div>
             <div class="highlights-grid">
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <i class="fas fa-code"></i>
+                <div class="highlight-card rotating-card-3d card-style-1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="highlight-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Real Industry Projects</h3>
+                            <p>Work on live projects from top companies like Flipkart, Zomato, and startups.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Project Features</h3>
+                            <ul class="feature-list">
+                                <li>15+ Live Projects</li>
+                                <li>GitHub Portfolio</li>
+                                <li>Client Interaction Experience</li>
+                                <li>Production-level Code</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3>Real Projects</h3>
-                    <p>Build actual applications and solutions that matter in the industry</p>
                 </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <i class="fas fa-users"></i>
+
+                <div class="highlight-card rotating-card-3d card-style-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="highlight-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Expert Industry Mentorship</h3>
+                            <p>Learn directly from senior engineers at FAANG companies with 8+ years of experience.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Mentorship Benefits</h3>
+                            <ul class="feature-list">
+                                <li>1:1 Mentorship Sessions</li>
+                                <li>Code Review & Feedback</li>
+                                <li>Career Guidance</li>
+                                <li>Interview Preparation</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3>Industry Mentorship</h3>
-                    <p>Learn from experienced professionals working in top tech companies</p>
                 </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <i class="fas fa-certificate"></i>
+
+                <div class="highlight-card rotating-card-3d card-style-3" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="highlight-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3>Industry-Recognized Certifications</h3>
+                            <p>Earn certificates recognized by 500+ companies and boost your resume.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Certifications</h3>
+                            <ul class="feature-list">
+                                <li>Google Cloud Certified</li>
+                                <li>AWS Solutions Architect</li>
+                                <li>Microsoft Azure Certified</li>
+                                <li>Meta Certified Developer</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3>Certified Courses</h3>
-                    <p>Get industry-recognized credentials that boost your career prospects</p>
                 </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <i class="fas fa-briefcase"></i>
+
+                <div class="highlight-card rotating-card-3d card-style-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="highlight-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <h3>360° Career Support</h3>
+                            <p>From resume building to salary negotiation, we support you at every step.</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Career Services</h3>
+                            <ul class="feature-list">
+                                <li>Resume & LinkedIn Optimization</li>
+                                <li>Mock Interviews (50+)</li>
+                                <li>Salary Negotiation Training</li>
+                                <li>Placement Guarantee</li>
+                            </ul>
+                        </div>
                     </div>
-                    <h3>Career Support</h3>
-                    <p>Resume building, mock interviews, and LinkedIn branding services</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Stats Section -->
-    <section class="stats">
+    <section id="stats" class="stats section-bg-3">
+        <div class="stats-background"></div>
         <div class="container">
             <div class="stats-grid">
-                <div class="stat-item">
-                    <h3 class="stat-number">10,000+</h3>
-                    <p class="stat-label">Students Target by 2026</p>
+                <div class="stat-item stat-card-1" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="stat-number counter" data-target="10000">0</h3>
+                    <p class="stat-label">Students Trained</p>
+                    <span class="stat-sublabel">Target: 10,000+ by 2026</span>
                 </div>
-                <div class="stat-item">
-                    <h3 class="stat-number">100+</h3>
-                    <p class="stat-label">Partner Colleges & Companies</p>
+                <div class="stat-item stat-card-2" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="stat-number counter" data-target="500">0</h3>
+                    <p class="stat-label">Hiring Partners</p>
+                    <span class="stat-sublabel">Growing every month</span>
                 </div>
-                <div class="stat-item">
-                    <h3 class="stat-number">15+</h3>
-                    <p class="stat-label">Tech Courses Available</p>
+                <div class="stat-item stat-card-3" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="stat-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3 class="stat-number counter" data-target="25">0</h3>
+                    <p class="stat-label">Tech Courses</p>
+                    <span class="stat-sublabel">Constantly updated</span>
                 </div>
-                <div class="stat-item">
+                <div class="stat-item stat-card-4" data-aos="zoom-in" data-aos-delay="700">
+                    <div class="stat-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
                     <h3 class="stat-number">24/7</h3>
                     <p class="stat-label">Learning Support</p>
+                    <span class="stat-sublabel">Always available</span>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- IT Consultancy Style About Section -->
+    <section id="about" class="it-consultancy-section section-bg-4">
+        <div class="consultancy-container">
+            <div class="consultancy-layout">
+                <!-- Left Sidebar - Service Cards -->
+                <div class="consultancy-sidebar" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="sidebar-card active" data-service="training" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>IT Training</h3>
+                        <div class="card-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card" data-service="development" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>App Development</h3>
+                        <div class="card-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card" data-service="security" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Database Security</h3>
+                        <div class="card-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-card" data-service="marketing" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Marketing & Reporting</h3>
+                        <div class="card-arrow">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content Area -->
+                <div class="consultancy-content" data-aos="fade-left" data-aos-duration="1000">
+                    <!-- Training Content -->
+                    <div class="content-panel active" id="training-content">
+                        <div class="content-header">
+                            <div class="professional-image">
+                                <img src="images/it.jpg" alt="IT Training Professional">
+                                <div class="image-overlay">
+                                    <div class="play-button">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-info">
+                                <h2>IT Training Excellence</h2>
+                                <p class="content-subtitle">At NEXORÉVA Tech Solutions, we provide expert IT training services to help your business align its technology strategy with overall business objectives.</p>
+                                
+                                <div class="feature-points">
+                                    <div class="feature-point" data-aos="fade-up" data-aos-delay="100">
+                                        <i class="fas fa-check"></i>
+                                        <span>In-depth analysis of your IT infrastructure</span>
+                                    </div>
+                                    <div class="feature-point" data-aos="fade-up" data-aos-delay="200">
+                                        <i class="fas fa-check"></i>
+                                        <span>Custom IT strategies tailored to your needs</span>
+                                    </div>
+                                    <div class="feature-point" data-aos="fade-up" data-aos-delay="300">
+                                        <i class="fas fa-check"></i>
+                                        <span>Industry-leading technology implementation</span>
+                                    </div>
+                                </div>
+
+                                <div class="cta-button-container">
+                                    <a href="#courses" class="consultancy-cta-btn" data-aos="fade-up" data-aos-delay="400">
+                                        READ MORE
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- App Development Content -->
+                    <div class="content-panel" id="development-content">
+                        <div class="content-header">
+                            <div class="professional-image">
+                                <img src="images/web.jpg" alt="App Development Professional">
+                                <div class="image-overlay">
+                                    <div class="play-button">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-info">
+                                <h2>App Development Services</h2>
+                                <p class="content-subtitle">Our expert app development team creates cutting-edge mobile and web applications that drive business growth and enhance user experience.</p>
+                                
+                                <div class="feature-points">
+                                    <div class="feature-point">
+                                        <i class="fas fa-check"></i>
+                                        <span>Native iOS & Android development</span>
+                                    </div>
+                                    <div class="feature-point">
+                                        <i class="fas fa-check"></i>
+                                        <span>Cross-platform solutions with React Native</span>
+                                    </div>
+                                    <div class="feature-point">
+                                        <i class="fas fa-check"></i>
+                                        <span>Progressive Web Applications (PWA)</span>
+                                    </div>
+                                </div>
+
+                                <div class="cta-button-container">
+                                    <a href="#courses" class="consultancy-cta-btn">
+                                        READ MORE
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Security Content -->
+                    <div class="content-panel" id="security-content">
+                        <div class="content-header">
+                            <div class="professional-image">
+                                <img src="images/security.jpg" alt="Database Security Professional">
+                                <div class="image-overlay">
+                                    <div class="play-button">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-info">
+                                <h2>Database Security Solutions</h2>
+                                <p class="content-subtitle">Comprehensive database security services to protect your critical business data from threats and ensure compliance with industry standards.</p>
+                                
+                                <div class="feature-points">
+                                    <div class="feature-point">
+                                        <i class="fas fa-check"></i>
+                                        <span>Advanced threat detection and prevention</span>
+                                    </div>
+                                    <div class="feature-point">
+                                        <i class="fas fa-check"></i>
+                                        <span>Data encryption and access control</span>
+                                    </div>
+                                    <div class="feature-point">
+                                        <i class="fas fa-check"></i>
+                                        <span>Compliance with GDPR, HIPAA standards</span>
+                                    </div>
+                                </div>
+
+                                <div class="cta-button-container">
+                                    <a href="#courses" class="consultancy-cta-btn">
+                                        READ MORE
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Marketing & Reporting Content -->
+                    <div class="content-panel" id="marketing-content">
+                        <div class="content-header">
+                            <div class="professional-image">
+                                <img src="images/report.jpg" alt="Marketing Analytics Professional">
+                                <div class="image-overlay">
+                                    <div class="play-button">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-info">
+                                <h2>Marketing & Reporting Analytics</h2>
+                                <p class="content-subtitle">Data-driven marketing strategies and comprehensive reporting solutions that maximize operational efficiency and support business growth.</p>
+                                
+                                <div class="feature-points">
+                                    <div class="feature-point">
+                                        <i class="fas fa-check"></i>
+                                        <span>Real-time analytics and dashboards</span>
+                                    </div>
+                                    <div class="feature-point">
+                                        <i class="fas fa-check"></i>
+                                        <span>Marketing automation and CRM integration</span>
+                                    </div>
+                                    <div class="feature-point">
+                                        <i class="fas fa-check"></i>
+                                        <span>Performance tracking and ROI analysis</span>
+                                    </div>
+                                </div>
+
+                                <div class="cta-button-container">
+                                    <a href="#courses" class="consultancy-cta-btn">
+                                        READ MORE
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Interactive Showcase Section -->
+    <section id="facilities" class="interactive-showcase section-bg-5">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title showcase-title" data-aos="fade-up">Our Learning Environment</h2>
+                <p class="section-subtitle showcase-subtitle" data-aos="fade-up" data-aos-delay="200">Experience the future of tech education through our state-of-the-art facilities and methodologies</p>
+            </div>
+            <div class="showcase-wrapper">
+                <div class="showcase-content">
+                    <!-- AI Labs Content -->
+                    <div class="showcase-slide active animate-slide" data-slide="1">
+                        <div class="slide-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h3 class="slide-title">AI-Powered Learning Labs</h3>
+                        <p class="slide-description">Our cutting-edge AI-powered computer labs feature quantum computing simulators, advanced machine learning workstations, and immersive VR coding environments. Each station includes dual 4K monitors, haptic feedback devices, and access to cloud-based neural networks for real-time collaboration on complex algorithms.</p>
+                        <div class="showcase-features">
+                            <div class="feature-tag">Quantum Simulators</div>
+                            <div class="feature-tag">AI Workstations</div>
+                            <div class="feature-tag">VR Coding</div>
+                            <div class="feature-tag">Neural Networks</div>
+                        </div>
+                        <div class="slide-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">AI Workstations</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">Access</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Holographic Classrooms Content -->
+                    <div class="showcase-slide animate-slide" data-slide="2">
+                        <div class="slide-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3 class="slide-title">Holographic Classroom Sessions</h3>
+                        <p class="slide-description">Revolutionary holographic displays and interactive smart walls create immersive learning experiences. Students collaborate on 3D code visualizations, participate in virtual pair programming sessions, and engage with AI teaching assistants for personalized learning paths.</p>
+                        <div class="showcase-features">
+                            <div class="feature-tag">Holographic Displays</div>
+                            <div class="feature-tag">3D Visualization</div>
+                            <div class="feature-tag">AI Assistants</div>
+                            <div class="feature-tag">Smart Walls</div>
+                        </div>
+                        <div class="slide-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">20</span>
+                                <span class="stat-label">Smart Classrooms</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Students/Session</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Innovation Studios Content -->
+                    <div class="showcase-slide animate-slide" data-slide="3">
+                        <div class="slide-icon">
+                            <i class="fas fa-project-diagram"></i>
+                        </div>
+                        <h3 class="slide-title">Innovation Development Studios</h3>
+                        <p class="slide-description">State-of-the-art innovation studios equipped with IoT devices, blockchain development tools, AR/VR prototyping stations, and collaborative robot assistants. Students work on real startup projects with industry mentors and venture capitalists.</p>
+                        <div class="showcase-features">
+                            <div class="feature-tag">IoT Devices</div>
+                            <div class="feature-tag">Blockchain Tools</div>
+                            <div class="feature-tag">AR/VR Prototyping</div>
+                            <div class="feature-tag">Robot Assistants</div>
+                        </div>
+                        <div class="slide-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">15</span>
+                                <span class="stat-label">Innovation Studios</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">Projects/Year</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase-images">
+                    <div class="showcase-image active animate-image" data-slide="1">
+                        <img src="images/showcase-1.jpg" alt="AI-Powered Learning Labs">
+                        <div class="image-overlay">
+                            <div class="overlay-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-image animate-image" data-slide="2">
+                        <img src="images/showcase-2.avif" alt="Holographic Classrooms">
+                        <div class="image-overlay">
+                            <div class="overlay-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-image animate-image" data-slide="3">
+                        <img src="images/showcase-3.webp" alt="Innovation Studios">
+                        <div class="image-overlay">
+                            <div class="overlay-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="showcase-controls">
+                    <button class="control-btn active animate-btn" data-slide="1">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>AI Labs</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <button class="control-btn animate-btn" data-slide="2">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <span>Holo Rooms</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                    <button class="control-btn animate-btn" data-slide="3">
+                        <i class="fas fa-project-diagram"></i>
+                        <span>Studios</span>
+                        <div class="btn-glow"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section id="courses" class="featured-courses section-bg-6">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-up">Most Popular Courses</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Start your journey with our industry-validated curriculum</p>
+            </div>
+            <div class="courses-grid">
+                <div id="python-course" class="course-card course-card-featured" data-aos="flip-up" data-aos-delay="100">
+                    <div class="course-badge">Most Popular</div>
+                    <div class="course-bg-image">
+                        <img src="images/python-course.jpg" alt="Python Course">
+                        <div class="course-overlay">
+                            <div class="overlay-content">
+                                <i class="fab fa-python"></i>
+                                <p>Master Full Stack Development</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h4>Full Stack Python Development</h4>
+                        <p class="course-description">Master Python, Django, React, and deploy scalable web applications</p>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>6 Months</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>2,450+ Enrolled</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.9/5 Rating</span>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <span class="original-price">₹49,999</span>
+                            <span class="current-price">₹29,999</span>
+                        </div>
+                        <a href="#contact" class="btn btn-primary course-btn">Enroll Now</a>
+                    </div>
+                    <div class="course-hover-effect"></div>
+                </div>
+
+                <div id="ai-course" class="course-card course-card-gradient" data-aos="flip-up" data-aos-delay="300">
+                    <div class="course-bg-image">
+                        <img src="images/ai-course.jpg" alt="AI Course">
+                        <div class="course-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-brain"></i>
+                                <p>Build Intelligent Systems</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>AI & Machine Learning</h4>
+                        <p class="course-description">Build intelligent systems with Python, TensorFlow, and OpenAI APIs</p>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>8 Months</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>1,890+ Enrolled</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.8/5 Rating</span>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <span class="original-price">₹79,999</span>
+                            <span class="current-price">₹59,999</span>
+                        </div>
+                        <a href="#contact" class="btn btn-secondary course-btn">Learn More</a>
+                    </div>
+                    <div class="course-hover-effect"></div>
+                </div>
+
+                <div id="mobile-course" class="course-card course-card-modern" data-aos="flip-up" data-aos-delay="500">
+                    <div class="course-bg-image">
+                        <img src="images/mobile-course.jpg" alt="Mobile Course">
+                        <div class="course-overlay">
+                            <div class="overlay-content">
+                                <i class="fas fa-mobile-alt"></i>
+                                <p>Create Mobile Apps</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Mobile App Development</h4>
+                        <p class="course-description">Create iOS and Android apps with React Native and Flutter</p>
+                        <div class="course-details">
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>5 Months</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-users"></i>
+                                <span>1,230+ Enrolled</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-star"></i>
+                                <span>4.7/5 Rating</span>
+                            </div>
+                        </div>
+                        <div class="course-price">
+                            <span class="original-price">₹39,999</span>
+                            <span class="current-price">₹24,999</span>
+                        </div>
+                        <a href="#contact" class="btn btn-secondary course-btn">Learn More</a>
+                    </div>
+                    <div class="course-hover-effect"></div>
+                </div>
+            </div>
+            <div class="courses-footer">
+                <a href="#contact" class="btn btn-outline">View All Courses <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Success Stories Section -->
+    <section id="success" class="success-stories section-bg-7">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title success-title" data-aos="fade-up">Success Stories</h2>
+                <p class="section-subtitle success-subtitle" data-aos="fade-up" data-aos-delay="200">Real students, real transformations, real career growth</p>
+            </div>
+            <div class="stories-grid">
+                <div class="story-card story-card-1 enhanced-story-card" data-aos="slide-right" data-aos-delay="100">
+                    <div class="story-image">
+                        <img src="images/person-1.png" alt="Priya Sharma">
+                        <div class="company-logo">Google</div>
+                        <div class="image-glow"></div>
+                    </div>
+                    <div class="story-content">
+                        <h4 class="story-name">Priya Sharma</h4>
+                        <p class="story-role">Software Engineer at Google</p>
+                        <p class="story-package">₹28 LPA Package</p>
+                        <p class="story-text">"From a non-tech background to Google in 8 months. NEXORÉVA's mentorship and live projects made it possible."</p>
+                        <div class="story-stats">
+                            <span>Career Change</span>
+                            <span>8 Months</span>
+                        </div>
+                    </div>
+                    <div class="story-hover-effect"></div>
+                </div>
+
+                <div class="story-card story-card-2 enhanced-story-card" data-aos="slide-up" data-aos-delay="300">
+                    <div class="story-image">
+                        <img src="images/person-2.png" alt="Rahul Patel">
+                        <div class="company-logo">Microsoft</div>
+                        <div class="image-glow"></div>
+                    </div>
+                    <div class="story-content">
+                        <h4 class="story-name">Rahul Patel</h4>
+                        <p class="story-role">ML Engineer at Microsoft</p>
+                        <p class="story-package">₹32 LPA Package</p>
+                        <p class="story-text">"The AI course curriculum is amazing. Working on real ML projects gave me the confidence to crack FAANG interviews."</p>
+                        <div class="story-stats">
+                            <span>FAANG Success</span>
+                            <span>6 Months</span>
+                        </div>
+                    </div>
+                    <div class="story-hover-effect"></div>
+                </div>
+
+                <div class="story-card story-card-3 enhanced-story-card" data-aos="slide-left" data-aos-delay="500">
+                    <div class="story-image">
+                        <img src="images/person-1.png" alt="Anita Singh">
+                        <div class="company-logo">Amazon</div>
+                        <div class="image-glow"></div>
+                    </div>
+                    <div class="story-content">
+                        <h4 class="story-name">Anita Singh</h4>
+                        <p class="story-role">Full Stack Developer at Amazon</p>
+                        <p class="story-package">₹24 LPA Package</p>
+                        <p class="story-text">"The placement support is incredible. Mock interviews and resume guidance helped me land my dream job."</p>
+                        <div class="story-stats">
+                            <span>Dream Job</span>
+                            <span>4 Months</span>
+                        </div>
+                    </div>
+                    <div class="story-hover-effect"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section id="internships" class="internships-section section-bg-8">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-aos="fade-up">Internships & Projects</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">Gain real-world experience with our industry internship programs</p>
+            </div>
+            <div class="internships-content">
+                <p>Work on live projects from top companies and build your professional portfolio. Our internship programs provide hands-on experience and direct mentorship from industry experts.</p>
+                <a href="#contact" class="btn btn-primary">Apply for Internships</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Career Services Section -->
+    <section id="career-services" class="career-services-section section-bg-1">
+        <div class="career-overlay"></div>
+        <div class="container">
+            <div class="career-content-wrapper">
+                <div class="section-header career-header">
+                    <h2 class="section-title career-title" data-aos="fade-up">Career Services</h2>
+                    <p class="section-subtitle career-subtitle" data-aos="fade-up" data-aos-delay="200">Complete support for your career transformation journey</p>
+                </div>
+                <div class="career-services-content career-main-content">
+                    <p class="career-description">From resume building to interview preparation and salary negotiation, we provide comprehensive career support to ensure your success in the tech industry.</p>
+                    <a href="#contact" class="btn btn-primary career-btn">Get Career Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section section-bg-2"> 
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Ready to Transform Your Career?</h2>
+                <p>Join thousands of successful graduates who landed their dream tech jobs</p>
+                <div class="cta-buttons">
+                    <a href="#courses" class="btn btn-primary btn-large glow-btn">
+                        <i class="fas fa-rocket"></i>
+                        Start Free Trial
+                    </a>
+                    <a href="#contact" class="btn btn-secondary btn-large glass-btn">
+                        <i class="fas fa-calendar"></i>
+                        Book Counseling
+                    </a>
+                </div>
+                <div class="cta-guarantee">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>100% Job Guarantee or Full Money Back</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer section-bg-3">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/NEXORÉVA.png" alt="NEXORÉVA Logo" class="footer-logo">
+                    <p>Empowering the next generation of tech innovators through practical learning and real-world experience.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="#python-course">Python Full Stack</a></li>
+                        <li><a href="#ai-course">AI & Machine Learning</a></li>
+                        <li><a href="#courses">Data Science</a></li>
+                        <li><a href="#courses">Cloud Computing</a></li>
+                        <li><a href="#mobile-course">Mobile Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#success">Success Stories</a></li>
+                        <li><a href="#facilities">Our Facilities</a></li>
+                        <li><a href="#labs">Learning Labs</a></li>
+                        <li><a href="#classrooms">Classrooms</a></li>
+                        <li><a href="#studios">Project Studios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> NEXORÉVAmastery@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91-XXXXXXXXXX</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka, India</p>
+                        <p><i class="fas fa-globe"></i> www.NEXORÉVA.in</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 NEXORÉVA. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#about">Privacy Policy</a>
+                        <a href="#contact">Terms of Service</a>
+                        <a href="#contact">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: false,
+            offset: 100,
+            easing: 'ease-out-cubic'
+        });
+
+        // Refresh AOS animations on scroll
+        window.addEventListener('scroll', () => {
+            AOS.refresh();
+        });
+
+        // Hero Background Slider
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.hero-slide');
+        const totalSlides = slides.length;
+
+        function changeHeroBackground() {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (currentSlide + 1) % totalSlides;
+            slides[currentSlide].classList.add('active');
+        }
+
+        slides.forEach(slide => {
+            const bgImage = slide.getAttribute('data-bg');
+            slide.style.backgroundImage = `url('${bgImage}')`;
+        });
+
+        setInterval(changeHeroBackground, 5000);
+
+        // IT Consultancy Section Interactive Functionality
+        const sidebarCards = document.querySelectorAll('.sidebar-card');
+        const contentPanels = document.querySelectorAll('.content-panel');
+
+        sidebarCards.forEach(card => {
+            card.addEventListener('click', (e) => {
+                e.preventDefault();
+                const service = card.getAttribute('data-service');
+                
+                // Remove active class from all cards and panels
+                sidebarCards.forEach(c => c.classList.remove('active'));
+                contentPanels.forEach(p => p.classList.remove('active'));
+                
+                // Add active class to clicked card and corresponding panel
+                card.classList.add('active');
+                document.getElementById(`${service}-content`).classList.add('active');
+                
+                // Add animation class for smooth transition
+                const activePanel = document.getElementById(`${service}-content`);
+                activePanel.style.opacity = '0';
+                activePanel.style.transform = 'translateX(30px)';
+                
+                setTimeout(() => {
+                    activePanel.style.opacity = '1';
+                    activePanel.style.transform = 'translateX(0)';
+                }, 100);
+            });
+
+            // Add hover effect
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateX(10px)';
+                card.style.boxShadow = '0 10px 30px rgba(0, 191, 255, 0.2)';
+            });
+
+            card.addEventListener('mouseleave', () => {
+                if (!card.classList.contains('active')) {
+                    card.style.transform = 'translateX(0)';
+                    card.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+                }
+            });
+        });
+
+        // FIXED: Enhanced Interactive Showcase Controls with Proper Content Switching
+        const controlBtns = document.querySelectorAll('.control-btn');
+        const showcaseSlides = document.querySelectorAll('.showcase-slide');
+        const showcaseImages = document.querySelectorAll('.showcase-image');
+
+        function switchShowcaseContent(slideNumber) {
+            // Remove active classes from all elements
+            controlBtns.forEach(b => b.classList.remove('active'));
+            showcaseSlides.forEach(s => s.classList.remove('active'));
+            showcaseImages.forEach(i => i.classList.remove('active'));
+            
+            // Add active class to selected elements
+            const activeBtn = document.querySelector(`[data-slide="${slideNumber}"]`);
+            const activeSlide = document.querySelector(`.showcase-slide[data-slide="${slideNumber}"]`);
+            const activeImage = document.querySelector(`.showcase-image[data-slide="${slideNumber}"]`);
+            
+            if (activeBtn && activeSlide && activeImage) {
+                activeBtn.classList.add('active');
+                activeSlide.classList.add('active');
+                activeImage.classList.add('active');
+            }
+        }
+
+        controlBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const slideNumber = btn.getAttribute('data-slide');
+                switchShowcaseContent(slideNumber);
+            });
+        });
+
+        // Auto-rotate showcase slides (optional - can be disabled)
+        let currentShowcaseSlide = 1;
+        setInterval(() => {
+            currentShowcaseSlide = currentShowcaseSlide === 3 ? 1 : currentShowcaseSlide + 1;
+            switchShowcaseContent(currentShowcaseSlide);
+        }, 10000); // Changed to 10 seconds for better visibility
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Scroll to top functionality
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Counter animation
+        function animateCounter(el) {
+            const target = parseInt(el.getAttribute('data-target'));
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+            
+            const updateCounter = () => {
+                current += step;
+                if (current < target) {
+                    el.textContent = Math.floor(current).toLocaleString() + '+';
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    el.textContent = target.toLocaleString() + '+';
+                }
+            };
+            updateCounter();
+        }
+
+        // Intersection Observer for stats
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.counter');
+                    counters.forEach(counter => {
+                        animateCounter(counter);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        const statsSection = document.querySelector('.stats');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href && href !== '#' && href.length > 1) {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Active navigation link highlighting
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Header Scroll Animation
+        let lastScrollTop = 0;
+        let isScrollingDown = false;
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Determine scroll direction
+            if (scrollTop > lastScrollTop && scrollTop > 100) {
+                // Scrolling down and past threshold
+                if (!isScrollingDown) {
+                    header.classList.add('header-hidden');
+                    header.classList.remove('header-visible');
+                    isScrollingDown = true;
+                }
+            } else if (scrollTop < lastScrollTop - 5) {
+                // Scrolling up (with small buffer to prevent jitter)
+                if (isScrollingDown || scrollTop <= 100) {
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                    isScrollingDown = false;
+                }
+            }
+            
+            // Add scrolled class for styling changes
+            if (scrollTop > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            lastScrollTop = scrollTop;
+        });
+
+        // Show header immediately when page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            header.classList.add('header-visible');
+        });
+
+        // Show header when hovering near top of page
+        document.addEventListener('mousemove', (e) => {
+            if (e.clientY <= 100 && window.pageYOffset > 100) {
+                header.classList.remove('header-hidden');
+                header.classList.add('header-visible');
+            }
+        });
+
+    </script>
 </body>
 </html>

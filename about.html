@@ -3,40 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - NEXORÉVA</title>
-    <link rel="stylesheet" href="base.css">
+    <title>About Us - NEXORÉVA | Leading IT Training & Career Development</title>
+    <meta name="description" content="Discover NEXORÉVA's mission to transform tech careers through innovative training, mentorship, and real-world experience. Learn about our vision and commitment.">
+    
     <link rel="stylesheet" href="about.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header/Navigation -->
+    <!-- Enhanced Transparent Header -->
     <header class="header">
         <nav class="navbar">
             <div class="nav-container">
+                <div class="logo">
+                    <a href="#home">
+                        <img src="images/NEXORÉVA.png" alt="NEXORÉVA Logo" class="logo-img">
+                    </a>
+                </div>
                 <ul class="nav-menu">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="home.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a href="#" class="nav-link">Courses <i class="fas fa-chevron-down"></i></a>
+                        <a href="courses.html" class="nav-link">Courses <i class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-content">
-                            <a href="#">Python</a>
-                            <a href="#">Web Development</a>
-                            <a href="#">AI & Machine Learning</a>
-                            <a href="#">Data Science</a>
+                            <a href="#python-course"><i class="fab fa-python"></i> Python Development</a>
+                            <a href="#ai-course"><i class="fas fa-brain"></i> AI & Machine Learning</a>
+                            <a href="#mobile-course"><i class="fas fa-mobile-alt"></i> Mobile Development</a>
+                            <a href="#data-science"><i class="fas fa-chart-line"></i> Data Science</a>
+                            <a href="#cloud-computing"><i class="fas fa-cloud"></i> Cloud Computing</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Internships & Projects</a>
+                        <a href="#internships" class="nav-link">Internships & Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Career Services</a>
+                        <a href="career_services.html" class="nav-link">Career Services</a>
                     </li>
                     <li class="nav-item">
                         <a href="about.html" class="nav-link active">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Contact</a>
+                        <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
                 <div class="hamburger">
@@ -48,45 +57,704 @@
         </nav>
     </header>
 
-    <!-- About Hero Section -->
-    <section class="about-hero">
-        <div class="container">
-            <h1 class="page-title">About NEXORÉVA</h1>
-            <p class="page-subtitle">Transforming learners into creators and innovators who drive the future of technology</p>
+    <!-- Hero Section with Video Carousel -->
+    <section class="hero-section">
+        <div class="video-container">
+            <!-- Video Slide 1 -->
+            <div class="video-slide active">
+                <video autoplay muted loop preload="auto">
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <!-- Video Slide 2 -->
+            <div class="video-slide">
+                <video autoplay muted loop preload="auto">
+                    <source src="video2.mp4" type="video/mp4">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+            <!-- Video Slide 3 -->
+            <div class="video-slide">
+                <video autoplay muted loop preload="auto">
+                    <source src="video3.mp4" type="video/mp4">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+        
+        <!-- Overlay for better text readability -->
+        <div class="hero-overlay"></div>
+        
+        <!-- Hero Content -->
+        <div class="hero-content" id="heroContent">
+            <h1 class="hero-title" id="heroTitle">Our Vision</h1>
+            <p class="hero-subtitle" id="heroSubtitle">NEXORÉVA aims to lead in IT education and career growth, empowering learners to become innovators shaping the future of technology. We envision a global hub for tech skill-building, talent discovery, and innovation</p>
+        </div>
+
+        <!-- Optional: Scroll Indicator -->
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 13l3 3 7-7"/>
+                <path d="M12 17V3"/>
+            </svg>
         </div>
     </section>
 
-    <!-- Mission & Vision -->
-    <!-- ... (unchanged content) ... -->
+    <!-- Why Choose NEXORÉVA Section -->
+    <section class="why-choose-section">
+        <!-- Animated Background -->
+        <div class="bg-animation">
+            <div class="grid-pattern"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+        </div>
 
-    <!-- Footer -->
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title-main">Why Choose NEXORÉVA?</h2>
+                <p class="section-subtitle">At <strong>NEXORÉVA</strong>, we go beyond traditional learning. We are committed to transforming aspiring tech professionals into industry-ready innovators.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-number">1</div>
+                    <h3 class="feature-title">Industry-Relevant Training</h3>
+                    <p class="feature-description">Our courses are designed with the latest tech trends in mind — Python, AI, Data Science, Web Development — so you gain skills that employers actually need.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">2</div>
+                    <h3 class="feature-title">Learn by Doing</h3>
+                    <p class="feature-description">Theory is important, but <strong>real-world practice</strong> is critical. Our hands-on projects and live internships give you the experience that recruiters love to see on a resume.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">3</div>
+                    <h3 class="feature-title">Career-Focused Approach</h3>
+                    <p class="feature-description">From resume building to mock interviews, we provide career services that prepare you for success, not just certificates.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">4</div>
+                    <h3 class="feature-title">Connected with Industry</h3>
+                    <p class="feature-description">We collaborate with companies and colleges to bring real-world projects and internship opportunities directly to you.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">5</div>
+                    <h3 class="feature-title">Empowerment Through Mentorship</h3>
+                    <p class="feature-description">Our expert mentors offer personalized guidance to help you grow — whether you're just starting out or switching careers.</p>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-number">6</div>
+                    <h3 class="feature-title">Certification That Counts</h3>
+                    <p class="feature-description">Get certified with credentials that add real value to your portfolio and make your LinkedIn profile stand out.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews-section">
+        <div class="reviews-container">
+            <h2 class="reviews-title">Reviews From Our Students</h2>
+            
+            <div class="reviews-carousel">
+                <div class="review-slide active">
+                    <div class="review-stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="review-content">
+                        "NEXORÉVA transformed my career completely! The hands-on projects and mentorship helped me land my dream job as a Data Scientist. The real-world experience I gained here was invaluable."
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">AR</div>
+                        <div class="author-info">
+                            <h4>Arjun Reddy</h4>
+                            <p>Data Scientist at TechCorp</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-slide">
+                    <div class="review-stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="review-content">
+                        "The AI and Machine Learning course was exceptional! The instructors were knowledgeable, and the practical assignments prepared me for real industry challenges. Highly recommend NEXORÉVA!"
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">PS</div>
+                        <div class="author-info">
+                            <h4>Priya Sharma</h4>
+                            <p>ML Engineer at InnovateAI</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-slide">
+                    <div class="review-stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="review-content">
+                        "From zero coding knowledge to becoming a Full Stack Developer in 6 months! The structured curriculum and career support at NEXORÉVA made all the difference. Thank you for believing in me!"
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">RK</div>
+                        <div class="author-info">
+                            <h4>Rahul Kumar</h4>
+                            <p>Full Stack Developer at StartupHub</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-slide">
+                    <div class="review-stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="review-content">
+                        "The Python programming course was amazing! The live projects and internship opportunities gave me confidence to switch my career from finance to tech. Best decision ever!"
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">SK</div>
+                        <div class="author-info">
+                            <h4>Sneha Krishnan</h4>
+                            <p>Python Developer at FinTech Solutions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-slide">
+                    <div class="review-stars">
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                        <span class="star">★</span>
+                    </div>
+                    <div class="review-content">
+                        "NEXORÉVA's approach to teaching is unique and effective. The mentors are always available to help, and the community is incredibly supportive. I'm now working at my dream company!"
+                    </div>
+                    <div class="review-author">
+                        <div class="author-avatar">VG</div>
+                        <div class="author-info">
+                            <h4>Vikram Gupta</h4>
+                            <p>Software Engineer at GlobalTech</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+                <span class="indicator" data-slide="3"></span>
+                <span class="indicator" data-slide="4"></span>
+            </div>
+
+            <button class="show-more-btn">Show More Reviews</button>
+        </div>
+    </section>
+
+    <!-- Our Specialities Section -->
+    <section class="specialities-section">
+        <div class="specialities-container">
+            <h2 class="specialities-title">Our Specialities</h2>
+            
+            <div class="specialities-grid">
+                <div class="speciality-card">
+                    <div class="speciality-icon">🏆</div>
+                    <h3 class="speciality-title">Competitive</h3>
+                    <p class="speciality-description">We live with the same competitive spirit as that of our students and aim to be ahead in all that we do.</p>
+                </div>
+
+                <div class="speciality-card">
+                    <div class="speciality-icon">💡</div>
+                    <h3 class="speciality-title">Competent</h3>
+                    <p class="speciality-description">We constantly endeavor to enhance our skills, knowledge, and ability to impart quality education with state-of-the-art technology and infrastructure.</p>
+                </div>
+
+                <div class="speciality-card">
+                    <div class="speciality-icon">🤝</div>
+                    <h3 class="speciality-title">Commitment</h3>
+                    <p class="speciality-description">We are committed to meet the expectation and trust of the people who join us in our endeavor to develop the community.</p>
+                </div>
+
+                <div class="speciality-card">
+                    <div class="speciality-icon">❤️</div>
+                    <h3 class="speciality-title">Care</h3>
+                    <p class="speciality-description">We care for everyone we engage with and respect them for their personal and professional worth without any bias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <!-- Animated Background -->
+        <div class="faq-bg-animation">
+            <div class="binary-rain"></div>
+            <div class="floating-dots"></div>
+            <div class="gradient-waves"></div>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-header">
+                <h2 class="faq-title">FAQ</h2>
+                <p class="faq-subtitle">Got questions? We've got answers! Find everything you need to know about NEXORÉVA.</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <h3>What is NEXORÉVA?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>NEXORÉVA is an online learning platform offering practical, industry-ready tech training through courses, live projects, internships, and career services.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="faq-question">
+                        <h3>Who can join NEXORÉVA?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Anyone! Whether you're a college student, recent graduate, working professional, or career switcher — our programs are designed to fit all learning levels.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <h3>What courses do you offer?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We offer training in:</p>
+                        <ul>
+                            <li>Python Programming</li>
+                            <li>Web Development</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Data Science</li>
+                        </ul>
+                        <p>More courses will be added based on demand and tech trends.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="faq-question">
+                        <h3>Are the courses beginner-friendly?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Our courses are structured to support beginners with step-by-step guidance while also offering advanced modules for experienced learners.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <h3>Will I get a certificate?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all courses include an industry-recognized certificate upon successful completion.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="faq-question">
+                        <h3>What makes us different?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We focus on practical learning. You get to work on live projects, receive mentorship, and access career services — not just video tutorials.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question">
+                        <h3>Do you offer internships?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes. We provide real-world internships with live projects to help you gain hands-on experience and strengthen your resume.</p>
+                    </div>
+                </div>
+
+                <div class="faq-card" data-aos="fade-up" data-aos-delay="450">
+                    <div class="faq-question">
+                        <h3>Self-paced or live programs?</h3>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Currently, most courses are self-paced with optional live mentorship sessions and project deadlines to keep learners accountable.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action Section -->
+    <section class="call-section">
+        <div class="call-overlay"></div>
+        <div class="call-content">
+            <h2>Don't wait; call us right now</h2>
+            <p>Are you ready to transform your learning experience? Learn from the experts at NEXORÉVA Learning today.</p>
+            <div class="call-btn-container">
+                <a href="tel:+919876543210" class="call-btn">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <p>Empowering the next generation of tech innovators through practical learning and real-world experience.</p>
+                    <img src="images/NEXORÉVA.png" alt="NEXORÉVA Logo" class="footer-logo">
+                    <p>Empowering the next generation of tech innovators through practical learning and real-world experience. Join thousands of students who have transformed their careers with NEXORÉVA.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4>Popular Courses</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Internships</a></li>
-                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">Python Full Stack</a></li>
+                        <li><a href="#">AI & Machine Learning</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Cloud Computing</a></li>
+                        <li><a href="#">Mobile Development</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Our Facilities</a></li>
+                        <li><a href="#">Learning Labs</a></li>
+                        <li><a href="#">Classrooms</a></li>
+                        <li><a href="#">Project Studios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info">
                     <h4>Contact Info</h4>
-                    <p><i class="fas fa-envelope"></i> NEXORÉVAmastery@gmail.com</p>
+                    <p><i class="fas fa-envelope"></i> NEXOREVAmastery@gmail.com</p>
                     <p><i class="fas fa-phone"></i> +91-XXXXXXXXXX</p>
-                    <p><i class="fas fa-globe"></i> www.NEXORÉVA.in</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka, India</p>
+                    <p><i class="fas fa-globe"></i> www.NEXOREVA.in</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2025 NEXORÉVA. All rights reserved. | Forge Your Future in Tech</p>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 NEXORÉVA. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Video carousel and content switching
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.video-slide');
+        const heroTitle = document.getElementById('heroTitle');
+        const heroSubtitle = document.getElementById('heroSubtitle');
+        
+        const content = [
+            {
+                title: "Our Vision",
+                subtitle: "NEXORÉVA aims to lead in IT education and career growth, empowering learners to become innovators shaping the future of technology. We envision a global hub for tech skill-building, talent discovery, and innovation"
+            },
+            {
+                title: "Our Mission",
+                subtitle: "NEXORÉVA's mission is to equip students and professionals with real-world IT skills through quality training, live projects, and industry-focused internships, bridging the gap between academia and industry through hands-on learning and mentorship."
+            },
+            {
+                title: "Our Commitment",
+                subtitle: "We are committed to transforming careers and lives through exceptional education, mentorship, and opportunities that prepare our learners for the challenges and innovations of tomorrow's technology landscape."
+            }
+        ];
+
+        function switchSlide() {
+            // Fade out current slide
+            slides[currentSlide].classList.remove('active');
+            
+            // Move to next slide
+            currentSlide = (currentSlide + 1) % slides.length;
+            
+            // Fade in new slide
+            slides[currentSlide].classList.add('active');
+            
+            // Update content with fade effect
+            const heroContent = document.getElementById('heroContent');
+            heroContent.style.opacity = '0';
+            
+            setTimeout(() => {
+                heroTitle.textContent = content[currentSlide].title;
+                heroSubtitle.textContent = content[currentSlide].subtitle;
+                heroContent.style.opacity = '1';
+            }, 500);
+        }
+
+        // Switch slides every 5 seconds
+        setInterval(switchSlide, 5000);
+
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // Hide/Show navbar on scroll
+        let lastScrollTop = 0;
+        let scrollTimeout;
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Clear the timeout if it exists
+            if (scrollTimeout) {
+                clearTimeout(scrollTimeout);
+            }
+            
+            // Set a timeout to delay the navbar hiding/showing
+            scrollTimeout = setTimeout(() => {
+                if (scrollTop > lastScrollTop && scrollTop > 100) {
+                    // Scrolling down & past hero section
+                    header.classList.add('header-hidden');
+                } else {
+                    // Scrolling up or at top
+                    header.classList.remove('header-hidden');
+                    header.classList.add('header-visible');
+                }
+                lastScrollTop = scrollTop;
+            }, 100);
+
+            // Scrolled state
+            if (scrollTop > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        }, { passive: true });
+
+        // Preload videos for smoother transitions
+        function preloadVideos() {
+            slides.forEach(slide => {
+                const video = slide.querySelector('video');
+                if (video) {
+                    video.load();
+                }
+            });
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            preloadVideos();
+            
+            // Handle video loading errors
+            slides.forEach(slide => {
+                const video = slide.querySelector('video');
+                if (video) {
+                    video.addEventListener('error', function() {
+                        console.log('Video failed to load, using gradient background');
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('feature-item')) {
+                        const items = Array.from(entry.target.parentElement.children);
+                        const index = items.indexOf(entry.target);
+                        setTimeout(() => {
+                            entry.target.classList.add('animate');
+                        }, index * 100);
+                    } else {
+                        entry.target.classList.add('animate');
+                    }
+                }
+            });
+        }, observerOptions);
+
+        // Observe all feature items and specialty cards
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.feature-item, .speciality-card').forEach(item => {
+                observer.observe(item);
+            });
+        });
+
+        // Reviews Carousel Functionality
+        let currentReview = 0;
+        const reviewSlides = document.querySelectorAll('.review-slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const totalReviews = reviewSlides.length;
+
+        function showReview(index) {
+            // Hide all slides
+            reviewSlides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            // Show current slide
+            reviewSlides[index].classList.add('active');
+            indicators[index].classList.add('active');
+        }
+
+        function nextReview() {
+            currentReview = (currentReview + 1) % totalReviews;
+            showReview(currentReview);
+        }
+
+        // Auto-advance reviews every 5 seconds
+        setInterval(nextReview, 5000);
+
+        // Manual navigation with indicators
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                currentReview = index;
+                showReview(currentReview);
+            });
+        });
+
+        // Show More Reviews button functionality
+        document.querySelector('.show-more-btn')?.addEventListener('click', function() {
+            alert('More reviews feature coming soon! Thank you for your interest.');
+        });
+
+        // FAQ Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqCards = document.querySelectorAll('.faq-card');
+            faqCards.forEach(card => {
+                const question = card.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    const isActive = card.classList.contains('active');
+                    faqCards.forEach(otherCard => {
+                        if (otherCard !== card) {
+                            otherCard.classList.remove('active');
+                        }
+                    });
+                    card.classList.toggle('active', !isActive);
+                });
+            });
+
+            const faqObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('aos-animate');
+                        const delay = parseInt(entry.target.dataset.aosDelay) || 0;
+                        setTimeout(() => {
+                            entry.target.style.transitionDelay = '0ms';
+                        }, delay);
+                    }
+                });
+            }, observerOptions);
+
+            faqCards.forEach(card => {
+                faqObserver.observe(card);
+            });
+        });
+
+        // Scroll to Top functionality
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth scroll to next section when clicking scroll indicator
+        document.querySelector('.scroll-indicator')?.addEventListener('click', function() {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+        });
+
+        // Handle page visibility change for video optimization
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                slides.forEach(slide => {
+                    const video = slide.querySelector('video');
+                    if (video) video.pause();
+                });
+            } else {
+                const currentVideo = slides[currentSlide].querySelector('video');
+                if (currentVideo) currentVideo.play();
+            }
+        });
+    </script>
 </body>
 </html>

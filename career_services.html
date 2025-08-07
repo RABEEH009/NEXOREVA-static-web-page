@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Services - NEXORÉVA | Transform Your Tech Career</title>
+    <meta name="description" content="Comprehensive career services at NEXORÉVA - Resume building, interview preparation, job placement, and career transformation support.">
+    
+    <link rel="stylesheet" href="career_services.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="images/NEXORÉVA.png" alt="NEXORÉVA Logo" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#courses" class="nav-link">Courses <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#python-course"><i class="fab fa-python"></i> Python Development</a>
+                            <a href="#ai-course"><i class="fas fa-brain"></i> AI & Machine Learning</a>
+                            <a href="#mobile-course"><i class="fas fa-mobile-alt"></i> Mobile Development</a>
+                            <a href="#courses"><i class="fas fa-chart-line"></i> Data Science</a>
+                            <a href="#courses"><i class="fas fa-cloud"></i> Cloud Computing</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#internships" class="nav-link">Internships & Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="career_services.html" class="nav-link active">Career Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Local Images -->
+    <section class="career-hero">
+        <div class="hero-backgrounds">
+            <div class="hero-bg-image active" style="background-image: url('images/hero-1.jpg');"></div>
+            <div class="hero-bg-image" style="background-image: url('images/hero-2.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hexagon-pattern">
+            <div class="hexagon hex-1"></div>
+            <div class="hexagon hex-2"></div>
+            <div class="hexagon hex-3"></div>
+            <div class="hexagon hex-4"></div>
+            <div class="hexagon hex-5"></div>
+            <div class="hexagon hex-6"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge" data-aos="zoom-in">
+                    <span><i class="fas fa-briefcase"></i> Career Excellence Hub</span>
+                </div>
+                <h1 class="hero-title" data-aos="fade-down" data-aos-delay="200">Accelerate Your <span class="gradient-text">Career Growth</span></h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="400">From profile optimization to salary negotiation, our expert career services help tech professionals land dream jobs with confidence and achieve rapid career advancement.</p>
+                
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="600">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <div class="stat-number counter" data-target="2500">0</div>
+                        <div class="stat-label">Careers Transformed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="stat-number counter" data-target="94">0</div>
+                        <div class="stat-suffix">%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="stat-number">₹15</div>
+                        <div class="stat-suffix">L</div>
+                        <div class="stat-label">Average Package</div>
+                    </div>
+                </div>
+
+                <div class="hero-cta" data-aos="slide-up" data-aos-delay="800">
+                    <a href="#services" class="btn btn-primary pulse-btn">
+                        <span class="btn-text">Explore Services</span>
+                        <i class="fas fa-arrow-right btn-icon"></i>
+                    </a>
+                    <a href="#consultation" class="btn btn-secondary rotate-btn">
+                        <span class="btn-text">Free Consultation</span>
+                        <i class="fas fa-calendar btn-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="floating-elements">
+            <div class="float-element element-1"><i class="fas fa-code"></i></div>
+            <div class="float-element element-2"><i class="fas fa-laptop"></i></div>
+            <div class="float-element element-3"><i class="fas fa-rocket"></i></div>
+            <div class="float-element element-4"><i class="fas fa-star"></i></div>
+        </div>
+    </section>
+
+    <!-- New Services Section - No Cards -->
+    <section id="services" class="services-section-new">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-gem"></i>
+                    <span>Premium Services</span>
+                </div>
+                <h2 class="section-title" data-aos="slide-down">Our Career Services</h2>
+                <p class="section-subtitle" data-aos="fade-in" data-aos-delay="200">Comprehensive solutions designed to elevate your professional journey</p>
+            </div>
+
+            <div class="services-list-new">
+                <div class="service-item-new" data-aos="slide-right" data-aos-delay="100">
+                    <div class="service-number">01</div>
+                    <div class="service-icon-new">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="service-content-new">
+                        <h3>Resume & Portfolio Excellence</h3>
+                        <p>Transform your professional profile with ATS-optimized resumes, stunning portfolios, and LinkedIn optimization that gets you noticed by top recruiters.</p>
+                        <div class="service-features-list">
+                            <span>ATS Optimization</span>
+                            <span>Portfolio Design</span>
+                            <span>LinkedIn Enhancement</span>
+                        </div>
+                    </div>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="service-item-new" data-aos="slide-left" data-aos-delay="200">
+                    <div class="service-number">02</div>
+                    <div class="service-icon-new">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="service-content-new">
+                        <h3>Interview Mastery Program</h3>
+                        <p>Master the art of interviewing with personalized coaching, mock sessions, and confidence-building techniques that guarantee success.</p>
+                        <div class="service-features-list">
+                            <span>Mock Interviews</span>
+                            <span>Technical Prep</span>
+                            <span>Confidence Building</span>
+                        </div>
+                    </div>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="service-item-new" data-aos="slide-right" data-aos-delay="300">
+                    <div class="service-number">03</div>
+                    <div class="service-icon-new">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="service-content-new">
+                        <h3>Salary Negotiation Mastery</h3>
+                        <p>Maximize your earning potential with expert negotiation strategies, market analysis, and proven techniques to secure the best offers.</p>
+                        <div class="service-features-list">
+                            <span>Market Analysis</span>
+                            <span>Negotiation Strategy</span>
+                            <span>Offer Optimization</span>
+                        </div>
+                    </div>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="service-item-new" data-aos="slide-left" data-aos-delay="400">
+                    <div class="service-number">04</div>
+                    <div class="service-icon-new">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="service-content-new">
+                        <h3>Guaranteed Job Placement</h3>
+                        <p>Access our exclusive network of top companies with guaranteed placement services, direct referrals, and continuous support until you land your dream job.</p>
+                        <div class="service-features-list">
+                            <span>Direct Referrals</span>
+                            <span>Company Network</span>
+                            <span>Placement Guarantee</span>
+                        </div>
+                    </div>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Career Transformation Process Section -->
+    <section class="process-section-new">
+        <div class="process-background">
+            <div class="process-wave"></div>
+            <div class="process-wave"></div>
+            <div class="process-wave"></div>
+        </div>
+        
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge light">
+                    <i class="fas fa-route"></i>
+                    <span>Transformation Journey</span>
+                </div>
+                <h2 class="section-title white">Career Transformation Process</h2>
+                <p class="section-subtitle white">A systematic 5-step methodology designed for guaranteed success</p>
+            </div>
+
+            <div class="process-timeline-new">
+                <div class="timeline-path"></div>
+                
+                <div class="process-node" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="node-connector"></div>
+                    <div class="node-content">
+                        <div class="node-number">1</div>
+                        <div class="node-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Career Assessment</h3>
+                        <p>Deep dive analysis of your skills, goals, and market opportunities</p>
+                        <div class="node-features">
+                            <span>Skills Audit</span>
+                            <span>Market Research</span>
+                            <span>Goal Setting</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-node" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="node-connector"></div>
+                    <div class="node-content">
+                        <div class="node-number">2</div>
+                        <div class="node-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <h3>Profile Enhancement</h3>
+                        <p>Complete transformation of your professional presence and brand</p>
+                        <div class="node-features">
+                            <span>Resume Redesign</span>
+                            <span>Portfolio Creation</span>
+                            <span>Brand Building</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-node" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="node-connector"></div>
+                    <div class="node-content">
+                        <div class="node-number">3</div>
+                        <div class="node-icon">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                        <h3>Interview Excellence</h3>
+                        <p>Master every interview scenario with personalized training</p>
+                        <div class="node-features">
+                            <span>Mock Sessions</span>
+                            <span>Technical Prep</span>
+                            <span>Confidence Building</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-node" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="node-connector"></div>
+                    <div class="node-content">
+                        <div class="node-number">4</div>
+                        <div class="node-icon">
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
+                        <h3>Strategic Application</h3>
+                        <p>Targeted applications with company-specific strategies</p>
+                        <div class="node-features">
+                            <span>Job Targeting</span>
+                            <span>Application Strategy</span>
+                            <span>Network Access</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-node" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="node-connector"></div>
+                    <div class="node-content">
+                        <div class="node-number">5</div>
+                        <div class="node-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Success Achievement</h3>
+                        <p>Secure your dream job with ongoing support and mentorship</p>
+                        <div class="node-features">
+                            <span>Offer Negotiation</span>
+                            <span>Onboarding Support</span>
+                            <span>Career Growth</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proven Results with Background Image -->
+    <section class="metrics-section">
+        <div class="metrics-background-container">
+            <div class="metrics-background-image" style="background-image: url('images/stats-bg.png');"></div>
+            <div class="metrics-overlay"></div>
+        </div>
+        
+        <div class="container">
+            <div class="metrics-content">
+                <div class="metrics-left">
+                    <div class="section-header">
+                        <div class="section-badge">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Impact Metrics</span>
+                        </div>
+                        <h2 class="section-title" data-aos="zoom-out">Proven Results</h2>
+                        <p class="section-subtitle" data-aos="fade-in" data-aos-delay="200">Quantifiable success stories that demonstrate our impact</p>
+                    </div>
+                    
+                    <div class="changing-metrics">
+                        <div class="metric-card-changing active">
+                            <div class="metric-visual">
+                                <div class="metric-icon"><i class="fas fa-users"></i></div>
+                                <div class="metric-number counter" data-target="3500">0</div>
+                                <div class="metric-label">Students Placed</div>
+                                <div class="metric-description">Successfully placed in top tech companies worldwide including FAANG and Fortune 500</div>
+                            </div>
+                        </div>
+                        
+                        <div class="metric-card-changing">
+                            <div class="metric-visual">
+                                <div class="metric-icon"><i class="fas fa-building"></i></div>
+                                <div class="metric-number counter" data-target="750">0</div>
+                                <div class="metric-label">Partner Companies</div>
+                                <div class="metric-description">Leading companies trust our talent pipeline and recruitment process</div>
+                            </div>
+                        </div>
+                        
+                        <div class="metric-card-changing">
+                            <div class="metric-visual">
+                                <div class="metric-icon"><i class="fas fa-chart-line"></i></div>
+                                <div class="metric-number">180%</div>
+                                <div class="metric-label">Salary Increase</div>
+                                <div class="metric-description">Average salary boost after completing our training program</div>
+                            </div>
+                        </div>
+                        
+                        <div class="metric-card-changing">
+                            <div class="metric-visual">
+                                <div class="metric-icon"><i class="fas fa-clock"></i></div>
+                                <div class="metric-number counter" data-target="25">0</div>
+                                <div class="metric-label">Days Average</div>
+                                <div class="metric-description">Average time to receive first job offer</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="metrics-indicators">
+                        <span class="indicator active" data-metric="0"></span>
+                        <span class="indicator" data-metric="1"></span>
+                        <span class="indicator" data-metric="2"></span>
+                        <span class="indicator" data-metric="3"></span>
+                    </div>
+                </div>
+                
+                <div class="metrics-right">
+                    <div class="metrics-visual">
+                        <div class="floating-stats">
+                            <div class="stat-bubble bubble-1">95% Success Rate</div>
+                            <div class="stat-bubble bubble-2">₹15L+ Packages</div>
+                            <div class="stat-bubble bubble-3">FAANG Placements</div>
+                            <div class="stat-bubble bubble-4">24/7 Support</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="success-stories-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Success Stories</span>
+                </div>
+                <h2 class="section-title" data-aos="rubber-band">Success Stories</h2>
+                <p class="section-subtitle" data-aos="fade-in" data-aos-delay="200">Real transformations from real professionals</p>
+            </div>
+        </div>
+
+        <div class="continuous-carousel">
+            <div class="carousel-track">
+                <div class="success-card">
+                    <div class="card-header">
+                        <div class="success-avatar">
+                            <img src="images/person-1.png" alt="Priya Sharma">
+                            <div class="avatar-badge">Placed</div>
+                        </div>
+                        <div class="success-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Software Engineer</p>
+                            <div class="company-transition">
+                                <span class="from">TCS</span>
+                                <i class="fas fa-arrow-right"></i>
+                                <span class="to">Google</span>
+                            </div>
+                        </div>
+                        <div class="salary-badge">₹32L</div>
+                    </div>
+                    <div class="success-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>"The interview preparation was exceptional. Mock sessions prepared me for every scenario."</blockquote>
+                        <div class="transformation-stat">
+                            <span class="stat-value">300%</span>
+                            <span class="stat-label">Salary Increase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="success-card">
+                    <div class="card-header">
+                        <div class="success-avatar">
+                            <img src="images/person-2.png" alt="Rahul Patel">
+                            <div class="avatar-badge">Placed</div>
+                        </div>
+                        <div class="success-info">
+                            <h4>Rahul Patel</h4>
+                            <p>ML Engineer</p>
+                            <div class="company-transition">
+                                <span class="from">Wipro</span>
+                                <i class="fas fa-arrow-right"></i>
+                                <span class="to">Microsoft</span>
+                            </div>
+                        </div>
+                        <div class="salary-badge">₹28L</div>
+                    </div>
+                    <div class="success-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>"Resume optimization was a game changer. Profile views increased by 500%."</blockquote>
+                        <div class="transformation-stat">
+                            <span class="stat-value">250%</span>
+                            <span class="stat-label">Salary Increase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="success-card">
+                    <div class="card-header">
+                        <div class="success-avatar">
+                            <img src="images/person-3.png" alt="Anita Singh">
+                            <div class="avatar-badge">Placed</div>
+                        </div>
+                        <div class="success-info">
+                            <h4>Anita Singh</h4>
+                            <p>Full Stack Developer</p>
+                            <div class="company-transition">
+                                <span class="from">Startup</span>
+                                <i class="fas fa-arrow-right"></i>
+                                <span class="to">Amazon</span>
+                            </div>
+                        </div>
+                        <div class="salary-badge">₹24L</div>
+                    </div>
+                    <div class="success-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>"Job placement service connected me directly with Amazon's hiring team."</blockquote>
+                        <div class="transformation-stat">
+                            <span class="stat-value">200%</span>
+                            <span class="stat-label">Salary Increase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duplicate for continuous loop -->
+                <div class="success-card">
+                    <div class="card-header">
+                        <div class="success-avatar">
+                            <img src="images/person-1.png" alt="Priya Sharma">
+                            <div class="avatar-badge">Placed</div>
+                        </div>
+                        <div class="success-info">
+                            <h4>Priya Sharma</h4>
+                            <p>Software Engineer</p>
+                            <div class="company-transition">
+                                <span class="from">TCS</span>
+                                <i class="fas fa-arrow-right"></i>
+                                <span class="to">Google</span>
+                            </div>
+                        </div>
+                        <div class="salary-badge">₹32L</div>
+                    </div>
+                    <div class="success-content">
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote>"The interview preparation was exceptional. Mock sessions prepared me for every scenario."</blockquote>
+                        <div class="transformation-stat">
+                            <span class="stat-value">300%</span>
+                            <span class="stat-label">Salary Increase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation CTA -->
+    <section id="consultation" class="consultation-section">
+        <div class="container">
+            <div class="consultation-content">
+                <div class="cta-text">
+                    <h2>Ready to Transform Your Career?</h2>
+                    <p>Book a free consultation with our career experts and get a personalized roadmap to your dream job.</p>
+                    <div class="cta-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Free 45-minute career consultation</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Personalized career roadmap</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Industry salary benchmarking</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Resume & profile review</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="consultation-form-container">
+                    <div class="form-header">
+                        <h3>Start Your Journey</h3>
+                        <p>Fill out the form and we'll contact you within 24 hours</p>
+                    </div>
+                    
+                    <form class="consultation-form">
+                        <div class="form-row">
+                            <div class="input-group">
+                                <input type="text" id="fullName" required>
+                                <label for="fullName">Full Name</label>
+                            </div>
+                            <div class="input-group">
+                                <input type="email" id="email" required>
+                                <label for="email">Email Address</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="input-group">
+                                <input type="tel" id="phone" required>
+                                <label for="phone">Phone Number</label>
+                            </div>
+                            <div class="input-group">
+                                <select id="experience" required>
+                                    <option value="">Select Experience</option>
+                                    <option value="0-1">0-1 years (Fresher)</option>
+                                    <option value="1-3">1-3 years (Junior)</option>
+                                    <option value="3-5">3-5 years (Mid-level)</option>
+                                    <option value="5+">5+ years (Senior)</option>
+                                </select>
+                                <label for="experience">Experience Level</label>
+                            </div>
+                        </div>
+                        
+                        <div class="input-group">
+                            <select id="role" required>
+                                <option value="">Select Target Role</option>
+                                <option value="software-engineer">Software Engineer</option>
+                                <option value="data-scientist">Data Scientist</option>
+                                <option value="ml-engineer">ML Engineer</option>
+                                <option value="full-stack">Full Stack Developer</option>
+                                <option value="mobile-dev">Mobile Developer</option>
+                                <option value="devops">DevOps Engineer</option>
+                            </select>
+                            <label for="role">Target Role</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-submit">
+                            <span class="btn-text">Book Free Consultation</span>
+                            <i class="fas fa-calendar"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/NEXORÉVA.png" alt="NEXORÉVA Logo" class="footer-logo">
+                    <p>Empowering the next generation of tech innovators through practical learning and comprehensive career support.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Career Services</h4>
+                    <ul>
+                        <li><a href="#services">Resume Building</a></li>
+                        <li><a href="#services">Interview Preparation</a></li>
+                        <li><a href="#services">Job Placement</a></li>
+                        <li><a href="#services">Salary Negotiation</a></li>
+                        <li><a href="#consultation">Free Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="home.html#courses">Courses</a></li>
+                        <li><a href="home.html#about">About Us</a></li>
+                        <li><a href="home.html#success">Success Stories</a></li>
+                        <li><a href="#consultation">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> NEXORÉVAmastery@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91-XXXXXXXXXX</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka, India</p>
+                        <p><i class="fas fa-globe"></i> www.NEXORÉVA.in</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 NEXORÉVA. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: false,
+            offset: 50,
+            easing: 'ease-out-cubic'
+        });
+
+        // Hero background image switching
+        const heroBgImages = document.querySelectorAll('.hero-bg-image');
+        let currentBgIndex = 0;
+        
+        function switchHeroBackground() {
+            heroBgImages[currentBgIndex].classList.remove('active');
+            currentBgIndex = (currentBgIndex + 1) % heroBgImages.length;
+            heroBgImages[currentBgIndex].classList.add('active');
+        }
+        
+        setInterval(switchHeroBackground, 6000);
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter');
+            const observerOptions = {
+                threshold: 0.5,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counter = entry.target;
+                        const target = parseInt(counter.getAttribute('data-target'));
+                        const duration = 2000;
+                        const step = target / (duration / 16);
+                        let current = 0;
+                        
+                        const updateCounter = () => {
+                            current += step;
+                            if (current < target) {
+                                counter.textContent = Math.floor(current);
+                                requestAnimationFrame(updateCounter);
+                            } else {
+                                counter.textContent = target;
+                            }
+                        };
+                        updateCounter();
+                        observer.unobserve(counter);
+                    }
+                });
+            }, observerOptions);
+
+            counters.forEach(counter => observer.observe(counter));
+        }
+
+        animateCounters();
+
+        // Changing Metrics
+        let currentMetric = 0;
+        const metricCards = document.querySelectorAll('.metric-card-changing');
+        const metricIndicators = document.querySelectorAll('.metrics-indicators .indicator');
+        const totalMetrics = metricCards.length;
+
+        function showMetric(index) {
+            metricCards.forEach(card => card.classList.remove('active'));
+            metricIndicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            metricCards[index].classList.add('active');
+            metricIndicators[index].classList.add('active');
+            currentMetric = index;
+        }
+
+        function nextMetric() {
+            currentMetric = (currentMetric + 1) % totalMetrics;
+            showMetric(currentMetric);
+        }
+
+        setInterval(nextMetric, 4000);
+
+        metricIndicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => showMetric(index));
+        });
+
+        // Scroll to top
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Form handling
+        const consultationForm = document.querySelector('.consultation-form');
+        consultationForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you! We will contact you within 24 hours to schedule your free consultation.');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href && href !== '#' && href.length > 1) {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        const headerHeight = document.querySelector('.header').offsetHeight;
+                        const targetPosition = target.offsetTop - headerHeight;
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Header scroll effects
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
