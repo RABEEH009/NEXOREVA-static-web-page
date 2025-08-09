@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses - NEXORÉVA | Forge Your Future in Tech</title>
+    <link rel="stylesheet" href="courses.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Enhanced Transparent Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="home.html">
+                        <img src="images/NEXORÉVA.png" alt="NEXORÉVA Logo" class="logo-img">
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="home.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="courses.html" class="nav-link">Courses <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#python-course"><i class="fab fa-python"></i> Python Development</a>
+                            <a href="#ai-course"><i class="fas fa-brain"></i> AI & Machine Learning</a>
+                            <a href="#mobile-course"><i class="fas fa-mobile-alt"></i> Mobile Development</a>
+                            <a href="#data-science"><i class="fas fa-chart-line"></i> Data Science</a>
+                            <a href="#cloud-computing"><i class="fas fa-cloud"></i> Cloud Computing</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="internships-projects.html" class="nav-link">Internships & Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="career_services.html" class="nav-link">Career Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!-- Hero Section with Auto-Fading Background Images -->
+<section class="hero-section">
+    <!-- Background Image Slideshow -->
+    <div class="bg-slideshow">
+        <div class="bg-slide active" style="background-image: url('images/hero1.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/hero2.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/hero3.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('images/hero4.jpg');"></div>
+    </div>
+    
+    <!-- Overlay for better text readability -->
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+        <h1 class="hero-title">Transform Your Future with Our Courses</h1>
+        <!-- <p class="hero-subtitle">Discover cutting-edge programs designed to make you job-ready and industry-relevant. From fundamentals to advanced specializations, we offer comprehensive learning paths that align with current market demands.</p> -->
+        <div class="hero-stats">
+            <div class="stat-item">
+                <h3>100+</h3>
+                <p>Partner Companies</p>
+            </div>
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>Expert Instructors</p>
+            </div>
+            <div class="stat-item">
+                <h3>95%</h3>
+                <p>Placement Rate</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Optional slide indicators -->
+    <div class="slideshow-indicators">
+        <span class="indicator active" data-slide="0"></span>
+        <span class="indicator" data-slide="1"></span>
+        <span class="indicator" data-slide="2"></span>
+        <span class="indicator" data-slide="3"></span>
+    </div>
+    
+    <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+    </div>
+</section>
+
+
+    <!-- Course Categories Section -->
+    <section class="categories-section">
+        <div class="bg-animation">
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+        </div>
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title-main">Course Categories</h2>
+                <p class="section-subtitle">Choose from our diverse range of technology courses designed for different skill levels and career aspirations</p>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-category="programming">
+                    <div class="category-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="category-title">Programming & Development</h3>
+                    <p class="category-description">Master modern programming languages and frameworks</p>
+                    <div class="category-count">12 Courses</div>
+                </div>
+                <div class="category-card" data-category="data-science">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="category-title">Data Science & AI</h3>
+                    <p class="category-description">Dive deep into data analytics and machine learning</p>
+                    <div class="category-count">8 Courses</div>
+                </div>
+                <div class="category-card" data-category="cybersecurity">
+                    <div class="category-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="category-title">Cybersecurity</h3>
+                    <p class="category-description">Protect digital assets with advanced security skills</p>
+                    <div class="category-count">6 Courses</div>
+                </div>
+                <div class="category-card" data-category="cloud">
+                    <div class="category-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="category-title">Cloud Computing</h3>
+                    <p class="category-description">Build scalable applications on cloud platforms</p>
+                    <div class="category-count">10 Courses</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="featured-courses-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title-main">Featured Courses</h2>
+                <p class="section-subtitle">Our most popular and industry-demanded courses that guarantee career advancement</p>
+            </div>
+            <div class="courses-grid">
+                <!-- Course 1 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src='images/full-stack-dev.jpg' alt="Full Stack Development">
+                        <div class="course-badge">Bestseller</div>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Programming & Development</div>
+                        <h3 class="course-title">Full Stack Web Development</h3>
+                        <p class="course-description">Master both frontend and backend technologies including React, Node.js, and databases to build complete web applications.</p>
+                        <div class="course-features">
+                            <div class="feature-item">
+                                <i class="fas fa-clock"></i>
+                                <span>16 Weeks</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <span>Live Sessions</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certificate</span>
+                            </div>
+                        </div>
+                        <div class="course-instructor">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Smith">
+                            <div class="instructor-info">
+                                <h4>John Smith</h4>
+                                <p>Senior Full Stack Developer</p>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-old">₹49,999</span>
+                                <span class="price-current">₹39,999</span>
+                            </div>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images\Python_for_Data_Science.jpg" alt="Data Science">
+                        <div class="course-badge">New</div>
+                        <div class="course-level">Beginner</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Data Science & AI</div>
+                        <h3 class="course-title">Data Science with Python</h3>
+                        <p class="course-description">Learn data analysis, visualization, and machine learning using Python, pandas, and scikit-learn from scratch.</p>
+                        <div class="course-features">
+                            <div class="feature-item">
+                                <i class="fas fa-clock"></i>
+                                <span>12 Weeks</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <span>Live Sessions</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certificate</span>
+                            </div>
+                        </div>
+                        <div class="course-instructor">
+                            <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Alice Davis">
+                            <div class="instructor-info">
+                                <h4>Dr. Alice Davis</h4>
+                                <p>Data Science Lead</p>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-old">₹44,999</span>
+                                <span class="price-current">₹34,999</span>
+                            </div>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/cybersecurity.jpg" alt="Cybersecurity">
+                        <div class="course-badge">Hot</div>
+                        <div class="course-level">Advanced</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Cybersecurity</div>
+                        <h3 class="course-title">Ethical Hacking & Cybersecurity</h3>
+                        <p class="course-description">Become a cybersecurity expert by learning penetration testing, network security, and ethical hacking techniques.</p>
+                        <div class="course-features">
+                            <div class="feature-item">
+                                <i class="fas fa-clock"></i>
+                                <span>20 Weeks</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <span>Live Sessions</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certificate</span>
+                            </div>
+                        </div>
+                        <div class="course-instructor">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Mike Johnson">
+                            <div class="instructor-info">
+                                <h4>Mike Johnson</h4>
+                                <p>Security Consultant</p>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-old">₹59,999</span>
+                                <span class="price-current">₹49,999</span>
+                            </div>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="course-card">
+                    <div class="course-image">
+                        <img src="images/CloudComputing.jpg" alt="Cloud Computing">
+                        <div class="course-badge">Popular</div>
+                        <div class="course-level">Intermediate</div>
+                    </div>
+                    <div class="course-content">
+                        <div class="course-category">Cloud Computing</div>
+                        <h3 class="course-title">AWS Cloud Solutions Architecture</h3>
+                        <p class="course-description">Design and deploy scalable, highly available systems on Amazon Web Services cloud platform.</p>
+                        <div class="course-features">
+                            <div class="feature-item">
+                                <i class="fas fa-clock"></i>
+                                <span>14 Weeks</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <span>Live Sessions</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-certificate"></i>
+                                <span>Certificate</span>
+                            </div>
+                        </div>
+                        <div class="course-instructor">
+                            <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Sarah Kim">
+                            <div class="instructor-info">
+                                <h4>Sarah Kim</h4>
+                                <p>Cloud Architect</p>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <div class="course-price">
+                                <span class="price-old">₹54,999</span>
+                                <span class="price-current">₹44,999</span>
+                            </div>
+                            <button class="enroll-btn">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-container">
+                <button class="view-all-btn">View All Courses <i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Our Courses Section -->
+    <section class="why-courses-section">
+        <div class="bg-animation">
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+            <div class="floating-shape"></div>
+        </div>
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title-main">Why Choose Our Courses</h2>
+                <p class="section-subtitle">Experience the NEXORÉVA difference with our industry-focused approach to education</p>
+            </div>
+            <div class="why-features-grid">
+                <div class="why-feature-item">
+                    <div class="why-feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="why-feature-title">Project-Based Learning</h3>
+                    <p class="why-feature-description">Build real-world projects that you can showcase in your portfolio and demonstrate your skills to employers.</p>
+                </div>
+                <div class="why-feature-item">
+                    <div class="why-feature-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3 class="why-feature-title">Industry Expert Mentors</h3>
+                    <p class="why-feature-description">Learn from seasoned professionals who bring years of industry experience directly to your learning journey.</p>
+                </div>
+                <div class="why-feature-item">
+                    <div class="why-feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="why-feature-title">Job Placement Support</h3>
+                    <p class="why-feature-description">Get dedicated career support with resume building, interview preparation, and direct connections to hiring partners.</p>
+                </div>
+                <div class="why-feature-item">
+                    <div class="why-feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="why-feature-title">Flexible Learning</h3>
+                    <p class="why-feature-description">Study at your own pace with recorded sessions, live interactions, and 24/7 access to course materials.</p>
+                </div>
+                <div class="why-feature-item">
+                    <div class="why-feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 class="why-feature-title">Industry Certifications</h3>
+                    <p class="why-feature-description">Earn recognized certifications that validate your skills and boost your credibility in the job market.</p>
+                </div>
+                <div class="why-feature-item">
+                    <div class="why-feature-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="why-feature-title">100+ Partner Network</h3>
+                    <p class="why-feature-description">Access internships and job opportunities through our extensive network of partner companies and colleges.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Success Stories -->
+    <section class="success-stories-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title-main">Student Success Stories</h2>
+                <p class="section-subtitle">Hear from our graduates who transformed their careers with NEXORÉVA</p>
+            </div>
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Raj Patel">
+                    </div>
+                    <div class="story-content">
+                        <div class="story-stars">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                        </div>
+                        <p class="story-text">"The Full Stack course at NEXORÉVA completely changed my career. From a fresher to landing a job at a top tech company, the journey was incredible."</p>
+                        <div class="story-author">
+                            <h4>Raj Patel</h4>
+                            <p>Software Engineer at TechCorp</p>
+                        </div>
+                        <div class="story-achievement">
+                            <span class="achievement-badge">200% Salary Increase</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="https://randomuser.me/api/portraits/women/24.jpg" alt="Priya Sharma">
+                    </div>
+                    <div class="story-content">
+                        <div class="story-stars">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                        </div>
+                        <p class="story-text">"The Data Science program gave me practical skills that I apply daily in my role. The mentorship and project work were game-changers."</p>
+                        <div class="story-author">
+                            <h4>Priya Sharma</h4>
+                            <p>Data Analyst at DataInsights</p>
+                        </div>
+                        <div class="story-achievement">
+                            <span class="achievement-badge">Career Switch Success</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="story-card">
+                    <div class="story-image">
+                        <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="Amit Kumar">
+                    </div>
+                    <div class="story-content">
+                        <div class="story-stars">
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                            <i class="fas fa-star star"></i>
+                        </div>
+                        <p class="story-text">"The cybersecurity course was comprehensive and hands-on. I now work as a security consultant and love what I do every day."</p>
+                        <div class="story-author">
+                            <h4>Amit Kumar</h4>
+                            <p>Security Consultant at SecureNet</p>
+                        </div>
+                        <div class="story-achievement">
+                            <span class="achievement-badge">Dream Job Achieved</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="call-section">
+        <div class="call-overlay"></div>
+        <div class="section-container">
+            <div class="call-content">
+                <h2>Ready to Forge Your Future in Tech?</h2>
+                <p>Join thousands of successful graduates who transformed their careers with NEXORÉVA. Start your journey today with our industry-leading courses and expert mentorship.</p>
+                <div class="call-btn-container">
+                    <a href="#" class="call-btn">Start Your Journey Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="images/NEXORÉVA.png" alt="NEXORÉVA Logo" class="footer-logo">
+                    <p>Empowering the next generation of tech innovators through practical learning and real-world experience. Join thousands of students who have transformed their careers with NEXORÉVA.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Popular Courses</h4>
+                    <ul>
+                        <li><a href="#">Python Full Stack</a></li>
+                        <li><a href="#">AI & Machine Learning</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Cloud Computing</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="home.html#success">Success Stories</a></li>
+                        <li><a href="#">Our Facilities</a></li>
+                        <li><a href="#">Learning Labs</a></li>
+                        <li><a href="#">Classrooms</a></li>
+                        <li><a href="#">Project Studios</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact-info">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> NEXOREVAmastery@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +91-XXXXXXXXXX</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka, India</p>
+                    <p><i class="fas fa-globe"></i> www.NEXOREVA.in</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 NEXORÉVA. All rights reserved.</p>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+// Course page JavaScript functionality with background slideshow
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize all components
+    initMobileMenu();
+    initHeaderScroll();
+    initScrollIndicator();
+    initScrollToTop();
+    initBackgroundSlideshow(); // Main slideshow functionality
+    initCourseInteractions();
+    initAnimations();
+});
+
+// Mobile Menu Toggle
+function initMobileMenu() {
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+    }
+}
+
+// Header Scroll Behavior
+function initHeaderScroll() {
+    let lastScrollTop = 0;
+    const header = document.querySelector('.header');
+
+    if (header) {
+        window.addEventListener('scroll', function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+
+            // Hide/show header on scroll
+            if (scrollTop > lastScrollTop && scrollTop > 200) {
+                header.classList.add('header-hidden');
+                header.classList.remove('header-visible');
+            } else {
+                header.classList.remove('header-hidden');
+                header.classList.add('header-visible');
+            }
+
+            lastScrollTop = scrollTop;
+        });
+    }
+}
+
+// Scroll Indicator
+function initScrollIndicator() {
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+        scrollIndicator.addEventListener('click', function() {
+            const targetSection = document.querySelector('.categories-section') || document.querySelector('section:nth-child(2)');
+            if (targetSection) {
+                targetSection.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    }
+}
+
+// Scroll to Top Button
+function initScrollToTop() {
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+    
+    if (scrollToTopBtn) {
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+}
+
+// ===== MAIN BACKGROUND SLIDESHOW FUNCTIONALITY =====
+function initBackgroundSlideshow() {
+    const slides = document.querySelectorAll('.bg-slide');
+    const indicators = document.querySelectorAll('.indicator');
+    let currentSlide = 0;
+    let slideInterval;
+
+    // Configuration
+    const slideConfig = {
+        autoplay: true,
+        interval: 5000, // 5 seconds per slide
+        fadeTransition: 2000, // 2 seconds fade transition
+        pauseOnHover: true,
+        enableKeyboard: true,
+        enableTouch: true
+    };
+
+    // Start the slideshow
+    function startSlideshow() {
+        if (slideInterval) clearInterval(slideInterval);
+        slideInterval = setInterval(() => {
+            nextSlide();
+        }, slideConfig.interval);
+    }
+
+    // Stop the slideshow
+    function stopSlideshow() {
+        if (slideInterval) {
+            clearInterval(slideInterval);
+            slideInterval = null;
+        }
+    }
+
+    // Go to next slide
+    function nextSlide() {
+        goToSlide((currentSlide + 1) % slides.length);
+    }
+
+    // Go to previous slide
+    function prevSlide() {
+        goToSlide(currentSlide === 0 ? slides.length - 1 : currentSlide - 1);
+    }
+
+    // Go to specific slide
+    function goToSlide(slideIndex) {
+        if (slideIndex === currentSlide) return;
+
+        // Remove active class from current slide and indicator
+        if (slides[currentSlide]) {
+            slides[currentSlide].classList.remove('active');
+        }
+        if (indicators[currentSlide]) {
+            indicators[currentSlide].classList.remove('active');
+        }
+
+        // Update current slide index
+        currentSlide = slideIndex;
+
+        // Add active class to new slide and indicator
+        if (slides[currentSlide]) {
+            slides[currentSlide].classList.add('active');
+        }
+        if (indicators[currentSlide]) {
+            indicators[currentSlide].classList.add('active');
+        }
+
+        // Trigger slide animation
+        triggerSlideAnimation(currentSlide);
+    }
+
+    // Trigger slide animation
+    function triggerSlideAnimation(slideIndex) {
+        if (slides[slideIndex]) {
+            slides[slideIndex].style.animation = 'none';
+            setTimeout(() => {
+                slides[slideIndex].style.animation = 'slideIn 2s ease-in-out';
+            }, 50);
+        }
+    }
+
+    // Add click handlers for indicators
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            goToSlide(index);
+            // Restart the timer when user manually changes slide
+            if (slideConfig.autoplay) {
+                stopSlideshow();
+                setTimeout(startSlideshow, 100);
+            }
+        });
+    });
+
+    // Pause on hover functionality
+    if (slideConfig.pauseOnHover) {
+        const heroSection = document.querySelector('.hero-section');
+        if (heroSection) {
+            heroSection.addEventListener('mouseenter', () => {
+                stopSlideshow();
+            });
+            
+            heroSection.addEventListener('mouseleave', () => {
+                if (slideConfig.autoplay) {
+                    startSlideshow();
+                }
+            });
+        }
+    }
+
+    // Keyboard navigation
+    if (slideConfig.enableKeyboard) {
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                prevSlide();
+                restartSlideshow();
+            } else if (e.key === 'ArrowRight') {
+                nextSlide();
+                restartSlideshow();
+            }
+        });
+    }
+
+    // Touch/swipe support for mobile
+    if (slideConfig.enableTouch) {
+        let touchStartX = 0;
+        let touchEndX = 0;
+        let touchStartY = 0;
+        let touchEndY = 0;
+
+        const heroSection = document.querySelector('.hero-section');
+        if (heroSection) {
+            heroSection.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+                touchStartY = e.changedTouches[0].screenY;
+            }, { passive: true });
+
+            heroSection.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                touchEndY = e.changedTouches[0].screenY;
+                handleSwipe();
+            }, { passive: true });
+        }
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diffX = touchStartX - touchEndX;
+            const diffY = touchStartY - touchEndY;
+
+            // Only process horizontal swipes (ignore vertical scrolling)
+            if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > swipeThreshold) {
+                if (diffX > 0) {
+                    // Swipe left - next slide
+                    nextSlide();
+                } else {
+                    // Swipe right - previous slide
+                    prevSlide();
+                }
+                restartSlideshow();
+            }
+        }
+    }
+
+    // Restart slideshow helper
+    function restartSlideshow() {
+        if (slideConfig.autoplay) {
+            stopSlideshow();
+            setTimeout(startSlideshow, 100);
+        }
+    }
+
+    // Pause slideshow when tab is not visible (performance optimization)
+    document.addEventListener('visibilitychange', () => {
+        if (document.hidden) {
+            stopSlideshow();
+        } else if (slideConfig.autoplay) {
+            startSlideshow();
+        }
+    });
+
+    // Preload images for smoother transitions
+    function preloadImages() {
+        slides.forEach((slide, index) => {
+            if (index > 0) { // Skip first image as it's already loaded
+                const bgImage = slide.style.backgroundImage;
+                if (bgImage) {
+                    const imageUrl = bgImage.slice(4, -1).replace(/["']/g, "");
+                    const img = new Image();
+                    img.src = imageUrl;
+                    
+                    img.onload = () => {
+                        console.log(`Preloaded image ${index + 1}`);
+                    };
+                    
+                    img.onerror = () => {
+                        console.error(`Failed to preload image ${index + 1}: ${imageUrl}`);
+                    };
+                }
+            }
+        });
+    }
+
+    // Initialize slideshow
+    function initSlideshow() {
+        // Ensure first slide is active
+        if (slides.length > 0) {
+            slides[0].classList.add('active');
+        }
+        if (indicators.length > 0) {
+            indicators[0].classList.add('active');
+        }
+
+        // Preload images
+        preloadImages();
+
+        // Start autoplay if enabled
+        if (slideConfig.autoplay && slides.length > 1) {
+            startSlideshow();
+        }
+
+        // Log initialization
+        console.log(`Background slideshow initialized with ${slides.length} slides`);
+    }
+
+    // Start the slideshow
+    initSlideshow();
+
+    // Expose control functions globally (optional)
+    window.slideshowControls = {
+        next: nextSlide,
+        prev: prevSlide,
+        goTo: goToSlide,
+        play: startSlideshow,
+        pause: stopSlideshow,
+        getCurrentSlide: () => currentSlide,
+        getTotalSlides: () => slides.length
+    };
+}
+
+// Course Interactions
+function initCourseInteractions() {
+    // Category card clicks
+    const categoryCards = document.querySelectorAll('.category-card');
+    categoryCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const category = this.getAttribute('data-category');
+            console.log(`Filtering courses for category: ${category}`);
+            // Add filtering logic here if needed
+        });
+    });
+
+    // Enroll button interactions
+    const enrollBtns = document.querySelectorAll('.enroll-btn');
+    enrollBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log('Enrollment clicked');
+            
+            // Show a simple confirmation
+            const originalText = this.innerHTML;
+            this.innerHTML = '<i class="fas fa-check"></i> Enrolled!';
+            this.style.background = 'linear-gradient(135deg, #4ECDC4, #44A08D)';
+            
+            setTimeout(() => {
+                this.innerHTML = originalText;
+                this.style.background = 'var(--gradient-primary)';
+            }, 2000);
+        });
+    });
+
+    // View all courses button
+    const viewAllBtn = document.querySelector('.view-all-btn');
+    if (viewAllBtn) {
+        viewAllBtn.addEventListener('click', function() {
+            console.log('View all courses clicked');
+            // Add navigation logic here
+        });
+    }
+}
+
+// Animation Observers
+function initAnimations() {
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                entry.target.classList.add('animate');
+            }
+        });
+    }, observerOptions);
+
+    // Observe elements for animation
+    const animatedElements = document.querySelectorAll('.category-card, .course-card, .why-feature-item, .story-card, .feature-item');
+    animatedElements.forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(30px)';
+        el.style.transition = 'all 0.6s ease';
+        observer.observe(el);
+    });
+
+    // Hero stats counter animation
+    const statNumbers = document.querySelectorAll('.stat-item h3');
+    const startCounter = (element) => {
+        const text = element.textContent;
+        const target = parseInt(text.replace(/\D/g, ''));
+        const increment = target / 50;
+        let current = 0;
+        
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            
+            if (text.includes('+')) {
+                element.textContent = Math.floor(current) + '+';
+            } else if (text.includes('%')) {
+                element.textContent = Math.floor(current) + '%';
+            } else {
+                element.textContent = Math.floor(current);
+            }
+        }, 50);
+    };
+
+    const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                startCounter(entry.target);
+                statsObserver.unobserve(entry.target);
+            }
+        });
+    });
+
+    statNumbers.forEach(stat => {
+        statsObserver.observe(stat);
+    });
+}
+
+// Utility Functions
+function showNotification(message, type = 'success') {
+    const notification = document.createElement('div');
+    notification.className = `notification notification-${type}`;
+    notification.innerHTML = `
+        <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i>
+        <span>${message}</span>
+    `;
+    
+    notification.style.cssText = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: ${type === 'success' ? 'linear-gradient(135deg, #4ECDC4, #44A08D)' : 'linear-gradient(135deg, #FF6B6B, #FF8E53)'};
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        z-index: 10000;
+        opacity: 0;
+        transform: translateX(100%);
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 500;
+    `;
+    
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.style.opacity = '1';
+        notification.style.transform = 'translateX(0)';
+    }, 100);
+    
+    setTimeout(() => {
+        notification.style.opacity = '0';
+        notification.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+            if (document.body.contains(notification)) {
+                document.body.removeChild(notification);
+            }
+        }, 300);
+    }, 3000);
+}
+
+// Error handling for slideshow
+window.addEventListener('error', function(e) {
+    if (e.filename && e.filename.includes('courses.js')) {
+        console.error('Slideshow error:', e.message);
+    }
+});
+
+// Performance monitoring
+window.addEventListener('load', function() {
+    console.log('NEXORÉVA Course page loaded successfully with slideshow');
+});
+
+    </script>
+</body>
+</html>
